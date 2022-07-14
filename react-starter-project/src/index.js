@@ -20,27 +20,24 @@ class MyForm extends React.Component {
   }
 
   onNameChangeEventHandler(event) {
-    this.setState((prevState) => {
+    this.setState(() => {
       return {
-        ...prevState,
         name: event.target.value
       };
     });
   }
 
   onEmailChangeEventHandler(event) {
-    this.setState((prevState) => {
+    this.setState(() => {
       return {
-        ...prevState,
         email: event.target.value
       };
     });
   }
 
   onGenderChangeEventHandler(event) {
-    this.setState((prevState) => {
+    this.setState(() => {
       return {
-        ...prevState,
         gender: event.target.value
       };
     });
