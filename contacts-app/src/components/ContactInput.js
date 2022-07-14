@@ -16,18 +16,16 @@ class ContactInput extends React.Component {
   }
 
   onNameChangeEventHandler(event) {
-    this.setState((prevState) => {
+    this.setState(() => {
       return {
-        ...prevState,
         name: event.target.value,
       }
     });
   }
 
   onTagChangeEventHandler(event) {
-    this.setState((prevState) => {
+    this.setState(() => {
       return {
-        ...prevState,
         tag: event.target.value,
       }
     });
